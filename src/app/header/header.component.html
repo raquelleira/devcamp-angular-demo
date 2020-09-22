@@ -1,0 +1,6 @@
+<h1 *ngIf="cliente?.nome; else loginHeader">
+  Olá {{ cliente.nome }}
+  <a (click)="sair()"
+     routerLink="/">Sair</a>
+</h1>
+<ng-template #loginHeader>Bem vindo!</ng-template>

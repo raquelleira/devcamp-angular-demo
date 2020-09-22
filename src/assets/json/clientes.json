@@ -1,0 +1,14 @@
+[{
+    "id": "1",
+    "email": "raquel.leira@gmail.com",
+    "nome": "Raquel Leira",
+    "endereco": "Rua Coronel Vidal Ramos",
+    "phone": "9999-9999"
+},
+{
+    "id": "2",
+    "email": "filipe.leira@gmail.com",
+    "nome": "Filipe Leira",
+    "endereco": "Rua Coronel Vidal Ramos",
+    "phone": "8888-8888"
+}]

@@ -1,0 +1,35 @@
+<div [formGroup]="form"
+     *ngIf="form">
+  <mat-form-field fxFill>
+    <input matInput
+           type="text"
+           placeholder="Nome"
+           required
+           formControlName="nome">
+  </mat-form-field>
+  <mat-form-field fxFill>
+    <input matInput
+           type="text"
+           placeholder="Email"
+           formControlName="email">
+  </mat-form-field>
+  <mat-form-field fxFill>
+    <input matInput
+           type="text"
+           placeholder="Endereço"
+           formControlName="endereco">
+  </mat-form-field>
+  <mat-form-field fxFill>
+    <input matInput
+           type="text"
+           placeholder="Phone"
+           formControlName="phone">
+  </mat-form-field>
+  <button mat-flat-button
+          color="primary"
+          [disabled]="form.invalid"
+          (click)="salvar()">Salvar</button>
+  <button mat-flat-button
+          (click)="cancelar()">Cancelar</button>
+</div>
+

@@ -1,0 +1,15 @@
+<ul *ngFor="let cliente of clientes">
+  <li>
+    <div>{{cliente.nome}}</div>
+    <div>{{cliente.email}}</div>
+    <div>{{cliente.endereco}}</div>
+    <div>{{cliente.phone}}</div>
+    <button mat-flat-button
+          color="primary"
+          (click)="editarCliente(cliente)">Editar</button>
+  </li>
+</ul>
+<button mat-flat-button
+          color="primary"
+          (click)="criarCliente()">Criar</button>
+
